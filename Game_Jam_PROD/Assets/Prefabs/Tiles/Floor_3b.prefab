@@ -10,29 +10,45 @@ PrefabInstance:
     - target: {fileID: 1499878552356111833, guid: 6de25ff52141d7740a574b22cfc119e4,
         type: 3}
       propertyPath: m_tiles.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1499878552356111833, guid: 6de25ff52141d7740a574b22cfc119e4,
         type: 3}
       propertyPath: m_tileDifficultyMin.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1499878552356111833, guid: 6de25ff52141d7740a574b22cfc119e4,
         type: 3}
       propertyPath: m_tileDifficultyMax.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1499878552356111833, guid: 6de25ff52141d7740a574b22cfc119e4,
         type: 3}
       propertyPath: m_tileDifficultyMax.Array.data[0]
-      value: 0
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1499878552356111833, guid: 6de25ff52141d7740a574b22cfc119e4,
         type: 3}
       propertyPath: m_tiles.Array.data[0]
       value: 
-      objectReference: {fileID: 279429283589388311, guid: ea9528adcbd06ed47ae5e3825dc62f77,
+      objectReference: {fileID: 1099324899579602206, guid: 83008eb8df56e5a4f81ae7cb9cac6eb0,
         type: 3}
+    - target: {fileID: 1499878552356111833, guid: 6de25ff52141d7740a574b22cfc119e4,
+        type: 3}
+      propertyPath: m_tiles.Array.data[1]
+      value: 
+      objectReference: {fileID: 5536264058693170041, guid: 4efa39c6edc363246948d73bd355513b,
+        type: 3}
+    - target: {fileID: 1499878552356111833, guid: 6de25ff52141d7740a574b22cfc119e4,
+        type: 3}
+      propertyPath: m_tileDifficultyMin.Array.data[1]
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499878552356111833, guid: 6de25ff52141d7740a574b22cfc119e4,
+        type: 3}
+      propertyPath: m_tileDifficultyMax.Array.data[1]
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3819043373136714902, guid: 6de25ff52141d7740a574b22cfc119e4,
         type: 3}
       propertyPath: m_LocalPosition.x
