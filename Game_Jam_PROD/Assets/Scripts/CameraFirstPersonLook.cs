@@ -11,6 +11,8 @@ public class CameraFirstPersonLook : MonoBehaviour
     [SerializeField] float m_smoothing = 2;
     [SerializeField] float m_pickupReach = 2;
 
+    static public bool m_canInteract = false;
+
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -38,10 +40,15 @@ public class CameraFirstPersonLook : MonoBehaviour
 
         if (hit.collider != null && hit.collider.CompareTag("Bonus"))
         {
+            m_canInteract = true;
             if (Input.GetButtonDown("Pickup"))
             {
                 Destroy(hit.collider.gameObject);
             }
+        }
+        else
+        {
+            m_canInteract = false;
         }
     }
 
