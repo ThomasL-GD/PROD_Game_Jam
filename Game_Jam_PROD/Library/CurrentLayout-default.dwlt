@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 8}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 333, y: 271}
   m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
-  controlID: 85
+  controlID: 142
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 130
+  controlID: 98
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -200,7 +200,7 @@ MonoBehaviour:
     y: 0
     width: 2560
     height: 1357
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &9
 MonoBehaviour:
@@ -269,7 +269,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 14003, y: 14042}
   vertical: 1
-  controlID: 135
+  controlID: 27
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -294,7 +294,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 136
+  controlID: 28
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -399,8 +399,8 @@ MonoBehaviour:
     vZoomLockedByDefault: 0
     m_HBaseRangeMin: -767.5
     m_HBaseRangeMax: 767.5
-    m_VBaseRangeMin: -380.5
-    m_VBaseRangeMax: 380.5
+    m_VBaseRangeMin: -370
+    m_VBaseRangeMax: 370
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -409,7 +409,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -417,11 +417,11 @@ MonoBehaviour:
     m_DrawArea:
       serializedVersion: 2
       x: 0
-      y: 0
+      y: 21
       width: 1535
-      height: 761
+      height: 740
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 767.5, y: 380.5}
+    m_Translation: {x: 767.5, y: 370}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -429,9 +429,9 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -767.5
-      y: -380.5
+      y: -370
       width: 1535
-      height: 761
+      height: 740
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1535, y: 761}
@@ -479,20 +479,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs/Tiles/SourceTiles
+    - Assets/Prefabs/Tiles
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Prefabs/Tiles/SourceTiles
+  - Assets/Prefabs/Tiles
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\Max-Martin Sherie\Desktop\PROD_Game_Jam\Game_Jam_PROD
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: a8340000
-    m_LastClickedID: 13480
-    m_ExpandedIDs: 00000000923400009a340000a634000000ca9a3b
+    m_SelectedIDs: 0e350000
+    m_LastClickedID: 13582
+    m_ExpandedIDs: 00000000ee340000fa3400000e35000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -520,7 +520,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000092340000
+    m_ExpandedIDs: 00000000ee340000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -643,9 +643,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: a8340000
-      m_LastClickedID: 0
-      m_ExpandedIDs: 32faffff
+      m_SelectedIDs: ec330000
+      m_LastClickedID: 13292
+      m_ExpandedIDs: 46fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -698,16 +698,16 @@ MonoBehaviour:
   m_ShowContextualTools: 0
   m_WindowGUID: dad1112dc8ac11645a80a383744d0658
   m_Gizmos: 1
-  m_SceneIsLit: 1
+  m_SceneIsLit: 0
   m_SceneLighting: 1
   m_2DMode: 0
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 149.79237, y: 25.520569, z: 28.169464}
+    m_Target: {x: 27.890411, y: 81.50917, z: 21.943748}
     speed: 2
-    m_Value: {x: 149.79237, y: 25.520569, z: 28.169464}
+    m_Value: {x: 27.890411, y: 81.50917, z: 21.943748}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -753,13 +753,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.23772556, y: -0.04782032, z: 0.011767967, w: 0.97014153}
+    m_Target: {x: -0.12165839, y: -0.74956685, z: 0.14358759, w: -0.6347459}
     speed: 2
-    m_Value: {x: -0.23772556, y: 0.04782032, z: -0.011767967, w: -0.97014153}
+    m_Value: {x: -0.12164799, y: -0.7495028, z: 0.14357531, w: -0.63469166}
   m_Size:
-    m_Target: 292.28622
+    m_Target: 255.8231
     speed: 2
-    m_Value: 292.28622
+    m_Value: 244.8068
   m_Ortho:
     m_Target: 0
     speed: 2
