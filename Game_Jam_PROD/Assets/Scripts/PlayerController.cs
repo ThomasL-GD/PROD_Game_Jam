@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 
+    static public Transform m_playerPosition = null;
+
     [SerializeField] float m_speed = 5f;
     [SerializeField] float m_gravityMultiplier = 5f;
 
@@ -15,6 +17,8 @@ public class PlayerController : MonoBehaviour
     {
         m_rb = GetComponent<Rigidbody>();
         Physics.gravity = Physics.gravity * m_gravityMultiplier;
+
+        m_playerPosition = transform;
     }
 
     // Update is called once per frame
