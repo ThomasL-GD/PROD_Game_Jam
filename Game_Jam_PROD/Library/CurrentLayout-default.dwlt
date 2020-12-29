@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 8}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 333, y: 271}
   m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
-  controlID: 142
+  controlID: 55
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 98
+  controlID: 26
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -200,7 +200,7 @@ MonoBehaviour:
     y: 0
     width: 2560
     height: 1357
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &9
 MonoBehaviour:
@@ -399,8 +399,8 @@ MonoBehaviour:
     vZoomLockedByDefault: 0
     m_HBaseRangeMin: -767.5
     m_HBaseRangeMax: 767.5
-    m_VBaseRangeMin: -370
-    m_VBaseRangeMax: 370
+    m_VBaseRangeMin: -380.5
+    m_VBaseRangeMax: 380.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -417,11 +417,11 @@ MonoBehaviour:
     m_DrawArea:
       serializedVersion: 2
       x: 0
-      y: 21
+      y: 0
       width: 1535
-      height: 740
+      height: 761
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 767.5, y: 370}
+    m_Translation: {x: 767.5, y: 380.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -429,9 +429,9 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -767.5
-      y: -370
+      y: -380.5
       width: 1535
-      height: 740
+      height: 761
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1535, y: 761}
@@ -479,20 +479,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs/Tiles
+    - Assets/Props
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Prefabs/Tiles
+  - Assets/Props
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\Max-Martin Sherie\Desktop\PROD_Game_Jam\Game_Jam_PROD
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 0e350000
-    m_LastClickedID: 13582
-    m_ExpandedIDs: 00000000ee340000fa3400000e35000000ca9a3b
+    m_SelectedIDs: 26380000
+    m_LastClickedID: 14374
+    m_ExpandedIDs: 000000001e380000243800003c38000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -520,7 +520,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ee340000
+    m_ExpandedIDs: 000000001e380000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -603,10 +603,11 @@ MonoBehaviour:
     height: 1286
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
-  m_ObjectsLockedBeforeSerialization: []
+  m_ObjectsLockedBeforeSerialization:
+  - {fileID: 2703921506822417373, guid: 6bcd3484d69b951409862f05836344a2, type: 3}
   m_InstanceIDsLockedBeforeSerialization: 
   m_LockTracker:
-    m_IsLocked: 0
+    m_IsLocked: 1
   m_PreviewResizer:
     m_CachedPref: 160
     m_ControlHash: -371814159
@@ -643,9 +644,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: ec330000
-      m_LastClickedID: 13292
-      m_ExpandedIDs: 46fbffff
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 6af5ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -705,9 +706,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 27.890411, y: 81.50917, z: 21.943748}
+    m_Target: {x: -19.061663, y: 72.583, z: -265.14374}
     speed: 2
-    m_Value: {x: 27.890411, y: 81.50917, z: 21.943748}
+    m_Value: {x: -19.061663, y: 72.583, z: -265.14374}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -753,13 +754,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.12165839, y: -0.74956685, z: 0.14358759, w: -0.6347459}
+    m_Target: {x: 0.026941292, y: 0.91236216, z: -0.060543556, w: 0.40421522}
     speed: 2
-    m_Value: {x: -0.12164799, y: -0.7495028, z: 0.14357531, w: -0.63469166}
+    m_Value: {x: 0.027029565, y: 0.91167, z: -0.06049745, w: 0.40554562}
   m_Size:
-    m_Target: 255.8231
+    m_Target: 26.524672
     speed: 2
-    m_Value: 244.8068
+    m_Value: 26.524681
   m_Ortho:
     m_Target: 0
     speed: 2
