@@ -8,6 +8,12 @@ public class PlayerJump : MonoBehaviour
 
     Rigidbody m_rb = null;
 
+    [SerializeField] float maxGroundDistance = 3f;
+    bool isGrounded = false;
+
+
+    
+
     void Start()
     {
         m_rb = GetComponent<Rigidbody>();
@@ -16,7 +22,20 @@ public class PlayerJump : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Jump")) m_rb.AddForce(new Vector3(0, m_jumpForce, 0));
+        if(isGrounded) Jump(m_jumpForce);
+    }
 
+    void LateUpdate()
+    {
+        isGrounded = Physics.Raycast(transform.position, Vector3.down, maxGroundDistance);
+    }
+
+    public void Jump(float p_jumpForce)
+    {
+        if (Input.GetButtonDown("Jump"))
+        {
+            m_rb.velocity = new Vector3(m_rb.velocity.x, 0, m_rb.velocity.z);
+            m_rb.AddForce(new Vector3(0, p_jumpForce, 0));
+        }
     }
 }

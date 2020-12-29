@@ -9,6 +9,7 @@ public class CameraFirstPersonLook : MonoBehaviour
     Vector2 m_appliedMouseDelta;
     [SerializeField] float m_sensitivity = 1;
     [SerializeField] float m_smoothing = 2;
+    [SerializeField] float m_pickupReach = 2;
 
     void Start()
     {
@@ -29,5 +30,21 @@ public class CameraFirstPersonLook : MonoBehaviour
         // Rotate camera and controller.
         transform.localRotation = Quaternion.AngleAxis(-m_currentMouseLook.y, Vector3.right);
         m_playerPosition.localRotation = Quaternion.AngleAxis(m_currentMouseLook.x, Vector3.up);
+
+        Vector3 fwd = transform.TransformDirection(Vector3.forward);
+
+        RaycastHit hit;
+        Physics.Raycast(transform.position, fwd, out hit, m_pickupReach);
+
+        if (hit.collider != null && hit.collider.CompareTag("Bonus"))
+        {
+            if (Input.GetButtonDown("Pickup"))
+            {
+                Destroy(hit.collider.gameObject);
+            }
+        }
     }
+
+
+    //if (Physics.Raycast (transform.position, fwd, hit, Reach) && hit.transform.tag == "Dynamic")
 }
