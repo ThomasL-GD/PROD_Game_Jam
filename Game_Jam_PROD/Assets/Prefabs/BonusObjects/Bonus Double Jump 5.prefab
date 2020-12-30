@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 3398550523321048156}
   - component: {fileID: 1094095398152355708}
   m_Layer: 0
-  m_Name: Bonus Double Jump
+  m_Name: Bonus Life
   m_TagString: Bonus
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -138,7 +138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09c5abdf91e8a47459b5980f1b8f3d20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_rotateSpeed: 300
+  m_rotateSpeed: 100
   m_spawnRotation: {x: -90, y: 0, z: 0}
 --- !u!33 &7838197280638543990
 MeshFilter:
@@ -363,7 +363,7 @@ GameObject:
   - component: {fileID: 8549472777005301804}
   - component: {fileID: 1574604546766774372}
   m_Layer: 0
-  m_Name: Bonus Double Jump
+  m_Name: Bonus Life
   m_TagString: Bonus
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -395,7 +395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09c5abdf91e8a47459b5980f1b8f3d20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_rotateSpeed: 300
+  m_rotateSpeed: 100
   m_spawnRotation: {x: -90, y: 0, z: 0}
 --- !u!33 &2081647149412795250
 MeshFilter:
@@ -470,7 +470,7 @@ GameObject:
   - component: {fileID: 9120043186302474135}
   - component: {fileID: 2939027684716854203}
   m_Layer: 0
-  m_Name: Bonus Double Jump
+  m_Name: Bonus Life
   m_TagString: Bonus
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -502,7 +502,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09c5abdf91e8a47459b5980f1b8f3d20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_rotateSpeed: 300
+  m_rotateSpeed: 100
   m_spawnRotation: {x: -90, y: 0, z: 0}
 --- !u!33 &4405741658522551146
 MeshFilter:
@@ -577,7 +577,7 @@ GameObject:
   - component: {fileID: 3454890016387541526}
   - component: {fileID: 2467086255089378117}
   m_Layer: 0
-  m_Name: Bonus Double Jump
+  m_Name: Bonus Life
   m_TagString: Bonus
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -609,7 +609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09c5abdf91e8a47459b5980f1b8f3d20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_rotateSpeed: 300
+  m_rotateSpeed: 100
   m_spawnRotation: {x: -90, y: 0, z: 0}
 --- !u!33 &7084315181944555827
 MeshFilter:
@@ -684,7 +684,7 @@ GameObject:
   - component: {fileID: 1462338605532867858}
   - component: {fileID: 5246787524393036063}
   m_Layer: 0
-  m_Name: Bonus Double Jump
+  m_Name: Bonus Life
   m_TagString: Bonus
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -716,7 +716,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09c5abdf91e8a47459b5980f1b8f3d20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_rotateSpeed: 300
+  m_rotateSpeed: 100
   m_spawnRotation: {x: -90, y: 0, z: 0}
 --- !u!33 &7322057217833214914
 MeshFilter:

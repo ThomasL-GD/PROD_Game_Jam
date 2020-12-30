@@ -285,7 +285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09c5abdf91e8a47459b5980f1b8f3d20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_rotateSpeed: 300
+  m_rotateSpeed: 100
   m_spawnRotation: {x: -90, y: 0, z: 0}
 --- !u!33 &2920649681704506769
 MeshFilter:
