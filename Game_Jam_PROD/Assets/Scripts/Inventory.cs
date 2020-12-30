@@ -70,17 +70,17 @@ public class Inventory : MonoBehaviour
     {
         for (int i = 0; i < m_inventorySize; i++)
         {
-            if (m_inventoryStorage[i] != null && m_inventoryStorage[i].GetComponent<BonusSpawn>().m_canLevelUp)
+            if (m_inventoryStorage[i] != null && m_inventoryStorage[i].GetComponent<Bonus>().m_canLevelUp)
             {
                 for (int j = 0; j < m_inventorySize; j++)
                 {
                     if (m_inventoryStorage[j] != null)
                     {
-                        if (m_inventoryStorage[i].GetComponent<BonusSpawn>().m_selectedPrefab.name == m_inventoryStorage[j].GetComponent<BonusSpawn>().m_selectedPrefab.name && j != i)
+                        if (m_inventoryStorage[i].GetComponent<Bonus>().gameObject.name == m_inventoryStorage[j].GetComponent<Bonus>().gameObject.name && j != i)
                         {
                             Debug.Log(i);
                             Debug.Log(j);
-                            m_inventoryStorage[i] = m_inventoryStorage[i].GetComponent<BonusSpawn>().m_LevelUpItem;
+                            m_inventoryStorage[i] = m_inventoryStorage[i].GetComponent<Bonus>().m_LevelUpItem;
                             m_inventoryStorage[j] = null;
 
                             i = 0;
@@ -116,11 +116,21 @@ public class Inventory : MonoBehaviour
 
     public void InventoryApplyEffects()
     {
-        for (int i = 0; i < m_inventorySize; i++)
+        for (int i = m_inventorySize-1; i >= 0; i--)
         {
             if (m_inventoryStorage[i] != null)
             {
-                m_inventoryStorage[i].GetComponent<BonusSpawn>().ApplyEffect();
+                m_inventoryStorage[i].GetComponent<Bonus>().ApplyEffect();
+            }
+            else
+            {
+                MultiJump.m_jumps = 0;
+
+                PlayerJump.m_script.m_jumpForce = PlayerJump.m_script.m_jumpForceBase;
+
+                PlayerController.m_script.m_speed = PlayerController.m_script.m_baseSpeed;
+
+                HealthBar.m_maxHealth = 100;
             }
         }
 
@@ -131,7 +141,7 @@ public class Inventory : MonoBehaviour
         if (m_inventoryStorage[p_itemIndex] != null)
         {
             //if(!PlayerJump.m_script.m_isGrounded) PlayerJump.m_script.Jump(m_inventoryStorage[p_itemIndex].GetComponent<BonusSpawn>().m_destroyJumpForce);
-            PlayerJump.m_script.Jump(m_inventoryStorage[p_itemIndex].GetComponent<BonusSpawn>().m_destroyJumpForce);
+            PlayerJump.m_script.Jump(m_inventoryStorage[p_itemIndex].GetComponent<Bonus>().m_destroyJumpForce);
             m_inventoryStorage[p_itemIndex] = null;
         }
 
@@ -147,7 +157,7 @@ public class Inventory : MonoBehaviour
         {
             if (m_inventoryStorage[i] != null)
             {
-                m_inventorySquares[i].GetComponent<Image>().sprite = m_inventoryStorage[i].GetComponent<BonusSpawn>().m_uiSprite;
+                m_inventorySquares[i].GetComponent<Image>().sprite = m_inventoryStorage[i].GetComponent<Bonus>().m_uiSprite;
             }
             else
             {
