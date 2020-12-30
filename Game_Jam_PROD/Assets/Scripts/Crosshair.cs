@@ -21,9 +21,9 @@ public class Crosshair : MonoBehaviour
     
     void Update()
     {
-        if (CameraFirstPersonLook.m_canInteract && m_img.sprite != m_interactReticule) {
+        if (CameraFirstPersonLook.m_canInteract && m_img.sprite != m_interactReticule && !Inventory.m_full) {
             m_img.sprite = m_interactReticule;
-        }else if (!CameraFirstPersonLook.m_canInteract && m_img.sprite != m_defaultReticule)
+        }else if (!CameraFirstPersonLook.m_canInteract && m_img.sprite != m_defaultReticule )
         {
             m_img.sprite = m_defaultReticule;
         }

@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
         m_script = this;
         m_speed = m_baseSpeed;
         m_rb = GetComponent<Rigidbody>();
-        Physics.gravity = Physics.gravity * m_gravityMultiplier;
+        Physics.gravity = new Vector3(0,-9.8f,0) * m_gravityMultiplier;
 
         m_playerPosition = transform;
     }

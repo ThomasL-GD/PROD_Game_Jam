@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 2484595021804951188}
   - component: {fileID: 405316595484959326}
   - component: {fileID: -9105340440653048237}
+  - component: {fileID: 8771635195980315205}
   m_Layer: 0
-  m_Name: Floor_3b_wall_dif_2
+  m_Name: Floor_2b_dif_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -112,6 +113,24 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7159493684334533914, guid: d5243bbd8b7a8c64e9eee26fcb839ba7, type: 3}
+--- !u!114 &8771635195980315205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2206488097587987339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 997905f8116d2ba41956a2f305bd430a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_materials:
+  - {fileID: 2100000, guid: 49041980588124441a714b1e626300fa, type: 2}
+  - {fileID: 2100000, guid: 468bb96cc9b36494fa22e3fbc2861648, type: 2}
+  - {fileID: 2100000, guid: 12f27a7ea20dbfe45bf4c8bb4c9125c7, type: 2}
+  - {fileID: 2100000, guid: a9f8db807032c4749bf63afa39ec9937, type: 2}
+  - {fileID: 2100000, guid: 7d42249e82fd1eb42af1327c5343e1c4, type: 2}
 --- !u!1001 &2441286861482587246
 PrefabInstance:
   m_ObjectHideFlags: 0

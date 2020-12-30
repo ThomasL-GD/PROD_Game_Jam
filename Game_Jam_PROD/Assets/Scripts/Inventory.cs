@@ -36,7 +36,7 @@ public class Inventory : MonoBehaviour
     public void InventoryUpdate(GameObject p_pickedUpItem = null)
     {
 
-        for (int i = 0; i < m_inventorySize; i++)
+        if(p_pickedUpItem != null) for (int i = 0; i < m_inventorySize; i++)
         {
             if (m_inventoryStorage[i] == null)
             {

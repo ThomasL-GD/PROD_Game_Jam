@@ -62,6 +62,7 @@
     <Compile Include="Assets\Scripts\CameraFirstPersonLook.cs" />
     <Compile Include="Assets\Scripts\CanvasTaint.cs" />
     <Compile Include="Assets\Scripts\ClassBonus.cs" />
+    <Compile Include="Assets\Scripts\ColorChooser.cs" />
     <Compile Include="Assets\Scripts\Crosshair.cs" />
     <Compile Include="Assets\Scripts\DestroyTiles.cs" />
     <Compile Include="Assets\Scripts\FloorUi.cs" />
@@ -72,9 +73,11 @@
     <Compile Include="Assets\Scripts\MultiJump.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayerJump.cs" />
+    <Compile Include="Assets\Scripts\Portal.cs" />
     <Compile Include="Assets\Scripts\RotateItem.cs" />
     <Compile Include="Assets\Scripts\SpawnController.cs" />
     <Compile Include="Assets\Scripts\TilesSpawner.cs" />
+    <Compile Include="Assets\Scripts\TutorialEmpyInventory.cs" />
     <Compile Include="Assets\Scripts\TutorialRespawn.cs" />
     <Compile Include="Assets\Scripts\UILevel.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
