@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class PlayerJump : MonoBehaviour
 {
-    [SerializeField] float m_jumpForce = 100;
+    public static PlayerJump m_script = null;
 
+    [SerializeField] public float m_jumpForceBase = 100;
+    public float m_jumpForce = 0;
     Rigidbody m_rb = null;
 
     [SerializeField] float m_maxGroundDistance = 3f;
@@ -13,7 +15,11 @@ public class PlayerJump : MonoBehaviour
     
     void Start()
     {
+        m_script = this;
+
         m_rb = GetComponent<Rigidbody>();
+
+        m_jumpForce = m_jumpForceBase;
     }
 
     // Update is called once per frame

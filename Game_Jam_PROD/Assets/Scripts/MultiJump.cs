@@ -29,6 +29,7 @@ public class MultiJump : MonoBehaviour
         if(!m_playerJump.m_isGrounded && Input.GetButtonDown("Jump") && m_availlableJumps!= 0)
         {
             m_playerJump.Jump(m_jumpForce);
+            m_availlableJumps--;
         }
     }
 }

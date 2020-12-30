@@ -6,15 +6,19 @@ public class PlayerController : MonoBehaviour
 {
 
     static public Transform m_playerPosition = null;
-
-    [SerializeField] float m_speed = 5f;
+    static public PlayerController m_script = null;
+    [SerializeField] public float m_baseSpeed = 5f;
     [SerializeField] float m_gravityMultiplier = 5f;
+
+    public float m_speed = 0;
 
     Rigidbody m_rb = null;
 
     // Start is called before the first frame update
     void Start()
     {
+        m_script = this;
+        m_speed = m_baseSpeed;
         m_rb = GetComponent<Rigidbody>();
         Physics.gravity = Physics.gravity * m_gravityMultiplier;
 

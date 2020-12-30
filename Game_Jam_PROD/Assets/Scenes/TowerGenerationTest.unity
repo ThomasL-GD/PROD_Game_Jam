@@ -330,8 +330,19 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6213812481874626108, guid: 45dba40f32a3e6c44be540c7f48fa7c6,
+        type: 3}
+      propertyPath: m_position.Array.data[3]
+      value: 
+      objectReference: {fileID: 653490226}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45dba40f32a3e6c44be540c7f48fa7c6, type: 3}
+--- !u!224 &653490226 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5421718966032809614, guid: 45dba40f32a3e6c44be540c7f48fa7c6,
+    type: 3}
+  m_PrefabInstance: {fileID: 653490212}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &744588481
 GameObject:
   m_ObjectHideFlags: 0
@@ -546,6 +557,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player_capsule
       objectReference: {fileID: 0}
+    - target: {fileID: 6809739182118589659, guid: 645c67a4ecef00540a49c514734610e0,
+        type: 3}
+      propertyPath: m_jumpForceBase
+      value: 110000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809739182118589659, guid: 645c67a4ecef00540a49c514734610e0,
+        type: 3}
+      propertyPath: m_maxGroundDistance
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809739182118589660, guid: 645c67a4ecef00540a49c514734610e0,
+        type: 3}
+      propertyPath: m_baseSpeed
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 645c67a4ecef00540a49c514734610e0, type: 3}
 --- !u!1 &1527392891
@@ -706,6 +732,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_lavaDamagePerEcond
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3437253084899246418, guid: 3a040c1dc464e684ebf29f23757745e3,
+        type: 3}
+      propertyPath: m_rizeSpeed
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 3769687029395233199, guid: 3a040c1dc464e684ebf29f23757745e3,
         type: 3}

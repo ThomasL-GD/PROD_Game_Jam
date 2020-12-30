@@ -41,9 +41,9 @@ public class CameraFirstPersonLook : MonoBehaviour
         if (hit.collider != null && hit.collider.CompareTag("Bonus"))
         {
             m_canInteract = true;
-            if (Input.GetButtonDown("Pickup"))
+            if (Input.GetButtonDown("Pickup") && !Inventory.m_full)
             {
-                MultiJump.m_jumps++;
+                Inventory.m_inventory.InventoryUpdate(hit.collider.gameObject.GetComponent<BonusSpawn>().m_selectedPrefab);
                 Destroy(hit.collider.gameObject);
             }
         }
