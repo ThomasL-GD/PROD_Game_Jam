@@ -8,6 +8,7 @@ public class Lava : MonoBehaviour
     [SerializeField] float m_maxDistanceFromPlayer = 20;
     [SerializeField] float m_speedRaisePerFloor = 0.1f;
     [SerializeField] float m_maxSpeed = 7;
+    [SerializeField] float m_lavaDamagePerEcond = 25.0f;
 
     [SerializeField] float m_speed = 0;
 
@@ -29,6 +30,8 @@ public class Lava : MonoBehaviour
 
         if (PlayerController.m_playerPosition.position.y <= transform.position.y-0.7f) CanvasTaint.m_inLava = true;
         else CanvasTaint.m_inLava = false;
+
+        if (CanvasTaint.m_inLava) HealthBar.m_health -= m_lavaDamagePerEcond * Time.deltaTime;
 
         if (m_speed > m_maxSpeed) m_speed = m_maxSpeed;
     }
