@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 7084456357179635346}
   - component: {fileID: 7723513906624475465}
   m_Layer: 0
-  m_Name: Bonus Life
+  m_Name: Bonus Double Jump
   m_TagString: Bonus
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -138,7 +138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09c5abdf91e8a47459b5980f1b8f3d20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_rotateSpeed: 100
+  m_rotateSpeed: 300
   m_spawnRotation: {x: -90, y: 0, z: 0}
 --- !u!33 &2534278710234711234
 MeshFilter:
@@ -363,7 +363,7 @@ GameObject:
   - component: {fileID: 6904869210672816465}
   - component: {fileID: 6625625812882043890}
   m_Layer: 0
-  m_Name: Bonus Life
+  m_Name: Bonus Double Jump
   m_TagString: Bonus
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -395,7 +395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09c5abdf91e8a47459b5980f1b8f3d20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_rotateSpeed: 100
+  m_rotateSpeed: 300
   m_spawnRotation: {x: -90, y: 0, z: 0}
 --- !u!33 &6572233163828919053
 MeshFilter:
@@ -470,7 +470,7 @@ GameObject:
   - component: {fileID: 8340461376642935083}
   - component: {fileID: 3970872667224195523}
   m_Layer: 0
-  m_Name: Bonus Life
+  m_Name: Bonus Double Jump
   m_TagString: Bonus
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -502,7 +502,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09c5abdf91e8a47459b5980f1b8f3d20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_rotateSpeed: 100
+  m_rotateSpeed: 300
   m_spawnRotation: {x: -90, y: 0, z: 0}
 --- !u!33 &6181876239170636396
 MeshFilter:
@@ -577,7 +577,7 @@ GameObject:
   - component: {fileID: 5793999774065340834}
   - component: {fileID: 3431572201926259925}
   m_Layer: 0
-  m_Name: Bonus Life
+  m_Name: Bonus Double Jump
   m_TagString: Bonus
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -609,7 +609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09c5abdf91e8a47459b5980f1b8f3d20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_rotateSpeed: 100
+  m_rotateSpeed: 300
   m_spawnRotation: {x: -90, y: 0, z: 0}
 --- !u!33 &798184099994749520
 MeshFilter:

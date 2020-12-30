@@ -138,7 +138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09c5abdf91e8a47459b5980f1b8f3d20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_rotateSpeed: 100
+  m_rotateSpeed: 300
   m_spawnRotation: {x: -90, y: 0, z: 0}
 --- !u!33 &3843693817987427998
 MeshFilter:
@@ -245,7 +245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09c5abdf91e8a47459b5980f1b8f3d20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_rotateSpeed: 100
+  m_rotateSpeed: 300
   m_spawnRotation: {x: -90, y: 0, z: 0}
 --- !u!33 &8333946345204516561
 MeshFilter:
@@ -502,7 +502,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09c5abdf91e8a47459b5980f1b8f3d20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_rotateSpeed: 100
+  m_rotateSpeed: 300
   m_spawnRotation: {x: -90, y: 0, z: 0}
 --- !u!33 &5533619592880615219
 MeshFilter:
@@ -609,7 +609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09c5abdf91e8a47459b5980f1b8f3d20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_rotateSpeed: 100
+  m_rotateSpeed: 300
   m_spawnRotation: {x: -90, y: 0, z: 0}
 --- !u!33 &7736922733768405276
 MeshFilter:
@@ -716,7 +716,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09c5abdf91e8a47459b5980f1b8f3d20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_rotateSpeed: 100
+  m_rotateSpeed: 300
   m_spawnRotation: {x: -90, y: 0, z: 0}
 --- !u!33 &8001542593426019842
 MeshFilter:
