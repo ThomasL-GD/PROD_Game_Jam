@@ -68,7 +68,7 @@ public class Inventory : MonoBehaviour
                 {
                     if (m_inventoryStorage[j] != null)
                     {
-                        if (m_inventoryStorage[i].GetComponent<Bonus>().m_level == m_inventoryStorage[j].GetComponent<Bonus>().m_level && j != i)
+                        if (j != i && m_inventoryStorage[i].GetComponent<Bonus>().m_level == m_inventoryStorage[j].GetComponent<Bonus>().m_level && m_inventoryStorage[i].GetComponent<Bonus>().m_uiSprite == m_inventoryStorage[j].GetComponent<Bonus>().m_uiSprite)
                         {
                             m_inventoryStorage[i] = m_inventoryStorage[i].GetComponent<Bonus>().m_LevelUpItem;
                             m_inventoryStorage[j] = null;

@@ -15,12 +15,13 @@ public class Bonus : MonoBehaviour
     [SerializeField] float m_jumpHeightBoostPercent = 0;
     [SerializeField] float m_speedBoostPercent = 0;
     [SerializeField] float m_healthBoostPercent = 0;
-    
+    [SerializeField] int m_spawnChance = 2;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        int x = Random.Range(0,2);
+        int x = Random.Range(0, m_spawnChance);
         if (x != 0) Destroy(gameObject);
     }
 

@@ -159,7 +159,7 @@ MonoBehaviour:
   m_canLevelUp: 1
   m_LevelUpItem: {fileID: 2703921506822417373, guid: 27ccd3973481f244da58d5f4cafead63,
     type: 3}
-  m_destroyJumpForce: 60000
+  m_destroyJumpForce: 80000
   m_level: 2
   m_jumpAdd: 0
   m_jumpHeightBoostPercent: 0
