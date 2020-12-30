@@ -11,7 +11,7 @@ public class Inventory : MonoBehaviour
 
     static public Inventory m_inventory = null;
 
-    [SerializeField] GameObject[] m_inventoryStorage = null;
+    [SerializeField] public GameObject[] m_inventoryStorage = null;
 
     [SerializeField] int m_inventorySize = 4;
     [SerializeField] GameObject[] m_inventorySquares = null;
@@ -52,21 +52,13 @@ public class Inventory : MonoBehaviour
         InventoryMerge();
         InventorySort();
         InventoryApplyEffects();
-
-        bool full = true;
-
-        for (int i = 0; i < m_inventorySize; i++)
-        {
-            if (m_inventoryStorage[i] == null) full = false;
-        }
-
-        m_full = full;
+        InventoryFullCheck();
 
 
         InventoryUpdateUI();
     }
 
-    public void InventoryMerge()
+    void InventoryMerge()
     {
         for (int i = 0; i < m_inventorySize; i++)
         {
@@ -76,10 +68,8 @@ public class Inventory : MonoBehaviour
                 {
                     if (m_inventoryStorage[j] != null)
                     {
-                        if (m_inventoryStorage[i].GetComponent<Bonus>().gameObject.name == m_inventoryStorage[j].GetComponent<Bonus>().gameObject.name && j != i)
+                        if (m_inventoryStorage[i].GetComponent<Bonus>().m_level == m_inventoryStorage[j].GetComponent<Bonus>().m_level && j != i)
                         {
-                            Debug.Log(i);
-                            Debug.Log(j);
                             m_inventoryStorage[i] = m_inventoryStorage[i].GetComponent<Bonus>().m_LevelUpItem;
                             m_inventoryStorage[j] = null;
 
@@ -91,10 +81,9 @@ public class Inventory : MonoBehaviour
                 }
             }
         }
-
     }
 
-    public void InventorySort()
+    void InventorySort()
     {
         for (int i = 0; i < m_inventorySize; i++)
         {
@@ -107,6 +96,7 @@ public class Inventory : MonoBehaviour
                         m_inventoryStorage[j] = m_inventoryStorage[i];
                         m_inventoryStorage[i] = null;
 
+                        
                     }
                 }
             }
@@ -114,7 +104,7 @@ public class Inventory : MonoBehaviour
 
     }
 
-    public void InventoryApplyEffects()
+    void InventoryApplyEffects()
     {
         for (int i = m_inventorySize-1; i >= 0; i--)
         {
@@ -147,11 +137,25 @@ public class Inventory : MonoBehaviour
 
         InventorySort();
         InventoryApplyEffects();
+        InventoryFullCheck();
 
         InventoryUpdateUI();
     }
 
-    public void InventoryUpdateUI()
+    void InventoryFullCheck()
+    {
+
+        bool full = true;
+
+        for (int i = 0; i < m_inventorySize; i++)
+        {
+            if (m_inventoryStorage[i] == null) full = false;
+        }
+
+        m_full = full;
+    }
+
+    void InventoryUpdateUI()
     {
         for (int i = 0; i < m_inventorySize; i++)
         {
