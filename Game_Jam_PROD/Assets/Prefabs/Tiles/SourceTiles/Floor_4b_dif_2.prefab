@@ -9,11 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5644603941113328237}
-  - component: {fileID: -7646798227234519822}
+  - component: {fileID: -1221795788054440390}
   - component: {fileID: 8789464021538143688}
   - component: {fileID: 6782005133175392514}
-  - component: {fileID: -7960697176266914472}
   - component: {fileID: 8547102115599250513}
+  - component: {fileID: -7983017719069413653}
   m_Layer: 0
   m_Name: Floor_4b_dif_2
   m_TagString: Untagged
@@ -37,7 +37,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-7646798227234519822
+--- !u!114 &-1221795788054440390
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -96,20 +96,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &-7960697176266914472
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4980552156565481687}
-  m_Material: {fileID: 13400000, guid: 4cc2e8d148e6a3846ad45d0c3fc6819d, type: 2}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2751520838998390065, guid: 0d849caabbde9e647b807e6cc035390c, type: 3}
 --- !u!114 &8547102115599250513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,6 +114,20 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 12f27a7ea20dbfe45bf4c8bb4c9125c7, type: 2}
   - {fileID: 2100000, guid: a9f8db807032c4749bf63afa39ec9937, type: 2}
   - {fileID: 2100000, guid: 7d42249e82fd1eb42af1327c5343e1c4, type: 2}
+--- !u!64 &-7983017719069413653
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4980552156565481687}
+  m_Material: {fileID: 13400000, guid: 4cc2e8d148e6a3846ad45d0c3fc6819d, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2751520838998390065, guid: 0d849caabbde9e647b807e6cc035390c, type: 3}
 --- !u!1001 &6711262907249998087
 PrefabInstance:
   m_ObjectHideFlags: 0

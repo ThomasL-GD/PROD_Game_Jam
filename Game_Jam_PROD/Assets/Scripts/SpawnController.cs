@@ -6,6 +6,8 @@ public class SpawnController : MonoBehaviour
 {
 
     [SerializeField] GameObject[] m_towerTiles = null;
+    [SerializeField] float[] m_tileMinY = null;
+    [SerializeField] float[] m_tileMaxY = null;
     [SerializeField] [Tooltip("En nombre de tuiles")] float m_hauteurDeTours = 8;
     [SerializeField] [Tooltip("En Mettres")] float m_hauteurDeTuiles = 6;
 
@@ -19,12 +21,19 @@ public class SpawnController : MonoBehaviour
 
     void Start()
     {
+        List<int> availableIndex = new List<int>();
+
+        for (int i = 0; i < m_towerTiles.Length; i++)
+        {
+            if (m_tileMinY[i] <= m_playerFloor && m_tileMaxY[i] >= m_playerFloor) availableIndex.Add(i);
+        }
+
         for (int i=0;  i< m_towerRoots.Length; i++)
         {
             for (int j = 0; j < m_hauteurDeTours; j++)
             {
-                int random = Random.Range(0, m_towerTiles.Length);
-                Instantiate(m_towerTiles[random], m_towerRoots[i] + new Vector3(0, j* m_hauteurDeTuiles, 0), Quaternion.Euler(-90, 45 * Random.Range(0,9), 0));
+                int random = availableIndex[Random.Range(0, availableIndex.Count)];
+                Instantiate(m_towerTiles[random], m_towerRoots[i] + new Vector3(0, j * m_hauteurDeTuiles, 0), Quaternion.Euler(-90, 45 * Random.Range(0,9), 0));
             }
         }
     }
@@ -40,12 +49,19 @@ public class SpawnController : MonoBehaviour
         if (m_floorTracker < m_playerFloor)
         {
             m_floorTracker = m_playerFloor;
-            
+
+
+            List<int> availableIndex = new List<int>();
+
+            for (int i = 0; i < m_towerTiles.Length; i++)
+            {
+                if (m_tileMinY[i] <= m_playerFloor && m_tileMaxY[i] >= m_playerFloor) availableIndex.Add(i);
+            }
 
             for (int i = 0; i < m_towerRoots.Length; i++)
             {
-                int random = Random.Range(0, m_towerTiles.Length);
-                Instantiate(m_towerTiles[random], m_towerRoots[i] + new Vector3(0, (m_floorTracker + m_hauteurDeTours - 1) * m_hauteurDeTuiles , 0), Quaternion.Euler(-90, 45 * Random.Range(0, 8), 0));
+                int random = availableIndex[Random.Range(0, availableIndex.Count)];
+                Instantiate(m_towerTiles[random], m_towerRoots[i] + new Vector3(0, (m_floorTracker + m_hauteurDeTours - 1) * m_hauteurDeTuiles, 0), Quaternion.Euler(-90, 45 * Random.Range(0, 9), 0));
             }
         }
     }

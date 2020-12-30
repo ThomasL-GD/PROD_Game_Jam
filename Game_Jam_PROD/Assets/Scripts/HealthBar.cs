@@ -36,7 +36,8 @@ public class HealthBar : MonoBehaviour
         {
             m_health = 0;
             GetComponent<RectTransform>().localScale = Vector3.zero;
-            Debug.Log("Game Over");
+            Retry.m_go.SetActive(true);
+            Time.timeScale = 0;
         } else {
             GetComponent<RectTransform>().localScale = new Vector3(m_health * m_healthIncrements * Mathf.Sqrt(2*m_health) * 0.05f, m_rectangle.localScale.y, m_rectangle.localScale.z);
         }

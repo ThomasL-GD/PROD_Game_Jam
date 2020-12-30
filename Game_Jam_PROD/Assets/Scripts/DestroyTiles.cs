@@ -10,6 +10,5 @@ public class DestroyTiles : MonoBehaviour
     void Update()
     {
         if (transform.position.y + m_destroyDistanceY < PlayerController.m_playerPosition.transform.position.y) Destroy(gameObject);
-        if (PlayerController.m_playerPosition.transform.position.y < Lava.m_lavaY - 50) Debug.Log("Game Over");
     }
 }
