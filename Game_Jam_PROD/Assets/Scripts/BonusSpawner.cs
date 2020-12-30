@@ -9,15 +9,19 @@ public class BonusSpawner : MonoBehaviour
     // Update is called once per frame
     void Start()
     {
-        while (true)
-        {
-            int rand = Random.Range(0, m_bonusPrefabs.Length);
-            if (m_bonusPrefabs[rand].m_spawnFloor <= SpawnController.m_playerFloor) {
+        List<int> prefabs = new List<int>();
 
-                Instantiate(m_bonusPrefabs[rand].m_gameObject, transform.position, transform.rotation);
-                break;
+        for (int i = 0; i< m_bonusPrefabs.Length; i++)
+        {
+            if(m_bonusPrefabs[i].m_spawnFloor <= SpawnController.m_playerFloor)
+            {
+                prefabs.Add(i);
             }
         }
+
+        int rand = Random.Range(0, prefabs.Count);
+        Instantiate(m_bonusPrefabs[prefabs[rand]].m_gameObject, transform.position, transform.rotation);
+
         Destroy(gameObject);
     }
 }

@@ -9,10 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3372513205128540519}
+  - component: {fileID: -6329292872921873353}
   - component: {fileID: 1829105148581854914}
   - component: {fileID: 4505497628785494536}
   - component: {fileID: 464305653509330086}
-  - component: {fileID: -6329292872921873353}
   m_Layer: 0
   m_Name: Bonus
   m_TagString: Bonus
@@ -34,6 +34,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &-6329292872921873353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2703921506822417373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdb8d9f4b9c0f9d4ea4a80f4162d9723, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bonusPrefabs:
+  - {fileID: 8417348191325525526, guid: 34fa89f11e2a6e14197015063a442351, type: 3}
+  - {fileID: 8417348191325525526, guid: b843e9d64b3ae1e4e859ffe03c874add, type: 3}
+  - {fileID: 8417348191325525526, guid: 4605c44d788632146b75f5e5aa072b03, type: 3}
+  - {fileID: 8417348191325525526, guid: f4fe3195d23db5e4c8849734c4a2b9f9, type: 3}
+  - {fileID: 8417348191325525526, guid: 5dc1c5409780f1d48baa0820de6966e0, type: 3}
 --- !u!33 &1829105148581854914
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -94,19 +112,3 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.8
   m_Center: {x: 0, y: 0, z: 0.05}
---- !u!114 &-6329292872921873353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2703921506822417373}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdb8d9f4b9c0f9d4ea4a80f4162d9723, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_bonusPrefabs:
-  - {fileID: 8417348191325525526, guid: 34fa89f11e2a6e14197015063a442351, type: 3}
-  - {fileID: 8417348191325525526, guid: 1ffa356cd3b285741a4f2bc5acde52e7, type: 3}
-  - {fileID: 8417348191325525526, guid: df8028809ec281d4c854c7909d56ab9f, type: 3}

@@ -26,12 +26,22 @@ public class Bonus : MonoBehaviour
 
     public void ApplyEffect()
     {
-        if(m_jumpAdd != 0)MultiJump.m_jumps = m_jumpAdd;
+        if (m_jumpAdd != 0)
+        {
+            if (MultiJump.m_jumps < m_jumpAdd) MultiJump.m_jumps = m_jumpAdd;
+        }
 
-        if (m_jumpHeightBoostPercent != 0) PlayerJump.m_script.m_jumpForce = PlayerJump.m_script.m_jumpForceBase * (1 + m_jumpHeightBoostPercent / 100);
+        if (m_jumpHeightBoostPercent != 0)
+        {
+            if (PlayerJump.m_script.m_jumpForce < PlayerJump.m_script.m_jumpForceBase * (1 + m_jumpHeightBoostPercent / 100)) PlayerJump.m_script.m_jumpForce = PlayerJump.m_script.m_jumpForceBase * (1 + m_jumpHeightBoostPercent / 100);
+        }
 
-        if (m_speedBoostPercent != 0) PlayerController.m_script.m_speed = PlayerController.m_script.m_baseSpeed * (1 + m_speedBoostPercent / 100);
+        if (m_speedBoostPercent != 0) {
+            if (PlayerController.m_script.m_speed < PlayerController.m_script.m_baseSpeed * (1 + m_speedBoostPercent / 100)) PlayerController.m_script.m_speed = PlayerController.m_script.m_baseSpeed * (1 + m_speedBoostPercent / 100);
+        }
 
-        if (m_healthBoostPercent != 0) HealthBar.m_maxHealth = HealthBar.m_maxHealth * (1 + m_healthBoostPercent / 100);
+        if (m_healthBoostPercent != 0){
+            if (HealthBar.m_maxHealth < HealthBar.m_maxHealth * (1 + m_healthBoostPercent / 100)) HealthBar.m_maxHealth = HealthBar.m_maxHealth * (1 + m_healthBoostPercent / 100);
+        }
     }
 }

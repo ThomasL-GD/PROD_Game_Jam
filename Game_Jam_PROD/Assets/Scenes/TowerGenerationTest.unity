@@ -220,6 +220,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1302639038607714841, guid: 45dba40f32a3e6c44be540c7f48fa7c6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3966685568450428331, guid: 45dba40f32a3e6c44be540c7f48fa7c6,
         type: 3}
       propertyPath: m_Name
@@ -335,6 +340,16 @@ PrefabInstance:
       propertyPath: m_position.Array.data[3]
       value: 
       objectReference: {fileID: 653490226}
+    - target: {fileID: 9043572547632069175, guid: 45dba40f32a3e6c44be540c7f48fa7c6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.000061035156
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043572547632069175, guid: 45dba40f32a3e6c44be540c7f48fa7c6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45dba40f32a3e6c44be540c7f48fa7c6, type: 3}
 --- !u!224 &653490226 stripped
