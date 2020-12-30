@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3255261472420692990}
   m_LocalRotation: {x: 0.8049944, y: -0, z: -0, w: 0.59328246}
-  m_LocalPosition: {x: 0, y: 0.77, z: 1.116}
+  m_LocalPosition: {x: 0, y: 0.7, z: 1.116}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6181996535707635296}
@@ -111,6 +111,7 @@ GameObject:
   - component: {fileID: 6181996535707635296}
   - component: {fileID: 6809739182118589660}
   - component: {fileID: 6809739182118589659}
+  - component: {fileID: 7333417724539520674}
   - component: {fileID: 6809739182118589662}
   - component: {fileID: 6809739182118589661}
   m_Layer: 0
@@ -147,8 +148,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c780f53886473bd49b1c39664a095c04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_speed: 9
-  m_gravityMultiplier: 3
+  m_speed: 12
+  m_gravityMultiplier: 4.6
 --- !u!114 &6809739182118589659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,8 +162,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81ec49dc8fa9c99469a9b33f2a0a66b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_jumpForce: 50000
-  maxGroundDistance: 1.2
+  m_jumpForce: 110000
+  m_maxGroundDistance: 3
+  m_isGrounded: 0
+--- !u!114 &7333417724539520674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6809739182118589658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfc9c46636388e6478a1df0fee4e43ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_jumpForce: 90000
 --- !u!136 &6809739182118589662
 CapsuleCollider:
   m_ObjectHideFlags: 0

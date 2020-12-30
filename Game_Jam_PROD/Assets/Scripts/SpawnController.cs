@@ -32,12 +32,15 @@ public class SpawnController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float math  =(PlayerController.m_playerPosition.position.y - m_hauteurDeTuiles/2) / m_hauteurDeTuiles;
+        float math  =(PlayerController.m_playerPosition.position.y) / m_hauteurDeTuiles;
         m_playerFloor = (int)math;
 
-        if(m_floorTracker < m_playerFloor)
+        if (m_floorTracker <= m_playerFloor) FloorUi.UI_Floor.UpdateFloorUI();
+
+        if (m_floorTracker < m_playerFloor)
         {
             m_floorTracker = m_playerFloor;
+            
 
             for (int i = 0; i < m_towerRoots.Length; i++)
             {

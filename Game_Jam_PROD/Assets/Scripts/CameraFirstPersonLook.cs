@@ -43,6 +43,7 @@ public class CameraFirstPersonLook : MonoBehaviour
             m_canInteract = true;
             if (Input.GetButtonDown("Pickup"))
             {
+                MultiJump.m_jumps++;
                 Destroy(hit.collider.gameObject);
             }
         }
